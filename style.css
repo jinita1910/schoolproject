@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Poppins|Roboto&display=swap');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+logo color: orange:#ff8c24 red: #dc3c3a
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    background: #eeeeee;
+}
+
+.srjBrandO {
+    color: #ff8c24;
+}
+
+.srjBrandR {
+    color: #dc3c3a;
+}
+
+.btn {
+    background: #dc3c3a;
+    border: 0px none;
+}
+
+.btn:hover {
+    background: #ff8c24;
+    transition: 0.5s ease-in;
+}
+
+#lg-download {
+    display: none;
+}
+
+.srjFlatBtn {
+    border-radius: 0px;
+    border: none;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #3f729b;
+}
+
+.fa-linkedin-in:hover {
+    color: #007bb6;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+
+/* 
+------content -----------
+****** 1. srjTopNav 
+*/
+
+#srjTopNav {
+    background: #1c1b3b;
+}
+
+#srjTopNav .svg-inline--fa {
+    margin-right: 1rem;
+}
+
+#srjTopNav .fab {
+    padding-right: 1rem;
+}
+
+
+/* end srjTopNav */
+
+#srjPrimaryMenu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 7px;
+    background-attachment: fixed;
+}
+
+#srjPrimaryMenu .navbar-nav a {
+    border-bottom: 4px solid #fff;
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#srjPrimaryMenu .navbar-nav li {
+    margin-left: 8px;
+    padding: 2px 0px;
+}
+
+#srjPrimaryMenu .navbar-nav a:hover {
+    border-top: 2px solid #dc3c3a;
+    border-bottom: 4px solid #dc3c3a;
+    transition: 0.9s ease-out;
+    color: #ff8c24;
+}
+
+#srjPrimaryMenu a {
+    color: #dc3c3a;
+    ;
+}
+
+#srjMainSlider {
+    width: 100%;
+    height: 80vh !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#srjMainSlider .carousel {
+    width: 100%;
+}
+
+#srjMainSlider img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(45%);
+    transition: 0.8s ease-in;
+}
+
+#srjMainSlider img:hover {
+    filter: brightness(100%);
+    transition: 0.8s ease-in-out;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: red;
+}
+
+#srjMainSlider .carousel-caption {
+    top: 40%;
+}
+
+#srjIntro {
+    background: #f1f1f1;
+    min-height: 95vh;
+    padding: 17vh 0px 25vh 0px;
+}
+
+#srjIntro .container {
+    background-image: url(assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+}
+
+#srjIntro h4 {
+    position: relative;
+    top: 20vh;
+    font-family: Montserrat;
+    font-size: 29px;
+    line-height: 60px;
+    border-left: 15px solid #37383a;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    padding: 0px 0px 0px 25px;
+}
+
+#srjShortInfo .srjBoxes {
+    padding: 8px;
+}
+
+.srjBoxes:hover {
+    transition: 0.6s ease-in-out;
+    box-shadow: 0px 2px 10px #ffeeef;
+}
+
+#srjShortInfo {
+    background: #37383a;
+    padding: 55px 0px;
+}
+
+#srjShortInfo i {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+#srjNews-update {
+    background: #ffffff;
+}
+
+#srjNews-update {
+    border-left: 50px solid #37383a;
+}
+
+.srjNews {
+    background: #6abee0;
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+#srjCourses {
+    padding: 50px 0px;
+    background: #ffffff;
+}
+
+.srjTitleUnderline {
+    background-image: url(assets/images/title-underline.png);
+    width: 100%;
+    height: 30px;
+    margin-top: 2vh;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#srjCourses .card {
+    box-shadow: 0px 4px 11px #333;
+    transition: 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+#srjCourses .card-header {
+    border-bottom: 10px solid #f1f1f1;
+}
+
+#srjCourses .card:hover {
+    box-shadow: none;
+    border: 0px solid #fff;
+}
+
+#srjCourses .card,
+#srjCourses .card-header,
+#srjCourses .btn,
+#srjCourses .card-img-top {
+    border-radius: 0px;
+}
+
+#srjCourses .card-img-top {
+    filter: grayscale(90%);
+    transition: 0.6s ease-in-out;
+    transition: transform .5s ease;
+}
+
+#srjCourses .card-img-top:hover {
+    filter: grayscale(0%);
+    transition: 0.6s ease-in-out;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.srjWorkingTable tr:hover {
+    background: #fff;
+}
+
+#srjGallery {
+    padding-bottom: 60px;
+}
+
+#srjGallery #aniimated-thumbnials a {
+    float: left;
+    width: 25%;
+    height: 250px;
+    padding: 8px;
+}
+
+#srjGallery #aniimated-thumbnials img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#srjOurLocation {
+    background: #ffffff;
+    padding: 50px 0px;
+}
+
+#srjFooter {
+    clear: both;
+    background: #333;
+    padding: 60px 0px;
+}
+
+#srjCopyright {
+    background: #ffffff;
+    color: #333;
+    padding-top: 2vh;
+}
+
+
+/* teacher start */
+
+#srjTeachers {
+    background: #eeeeee;
+    padding-left: 40px;
+}
+
+#srjTeachers .card {
+    height: 60vh;
+    box-shadow: 0px 4px 11px #333;
+    border-radius: 0px;
+    width: 250px;
+}
+
+#srjTeachers .card-img-top {
+    height: 51vh;
+    object-fit: cover;
+}
+
+#srjTeachers .card-body-1 {
+    background: #ff8c24;
+}
+
+#srjTeachers .card-body-2 {
+    background: #dc3c3a;
+}
+
+#srjTeachers .card-text-1 {
+    font-weight: 600;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+#srjTeachers .card-text-2 {
+    font-weight: 400;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+
+/* teacher end */
+
+
+/* 
+contact Page Design
+
+*/
+
+#srjContactEndBox {
+    background-color: #dc3c3a;
+    height: 70px;
+}
+
+#srjContactEndBox h4 {
+    line-height: 70px;
+}
+
+.course {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: #dc3c3a;
+    text-transform: uppercase;
+}
+
+#srjbanner img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+#srjcourseD {
+    margin-bottom: 10px;
+}
+
+#srjApply {
+    margin-top: 20px;
+}
+
+#srjEnteryR {
+    margin-top: 60px 0px;
+}
+
+#srjEnteryR .mb-0>a {
+    display: block;
+    position: relative;
+}
+
+#srjEnteryR .mb-0>a:after {
+    content: "\f063";
+    /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+}
+
+#srjEnteryR .mb-0>a[aria-expanded="true"]:after {
+    content: "\f062";
+    /* fa-chevron-up */
+}
+
+#srjAdmission {
+    margin-top: 20px;
+}
+
+.images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#srjTeacher {
+    background-color: black;
+    color: #f1f1f1;
+    padding: 70px 0px;
+}
+
+.icons {
+    font-size: 30px;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+
+.fa-user-alt {
+    color: navy;
+}
+
+.logoD {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+
+/*  */
+
+
+/* ------ blog page start---------*/
+
+#srjBlog .srjBlogHeading {
+    font-family: 'Roboto';
+}
+
+#srjBlog span,
+#srjBlog .fa-clock {
+    color: #999;
+}
+
+#srjBlog .col-md-6 {
+    padding-bottom: 10vh;
+}
+
+#srjBlog .col-md-3 {
+    background: white;
+    ;
+}
+
+#srjBlog .srjContactUs {
+    max-height: 100px;
+    background: white;
+}
+
+#srjBlog .srjContactUs span {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Poppins";
+    padding-top: 30vh;
+}
+
+#srjBlog .srjContactUs .fab {
+    font-size: 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+#srjBlog .srjContactUs .fa-facebook-square {
+    background: white;
+    color: #4267b2;
+    padding-right: 10px;
+}
+
+#srjBlog .srjContactUs .fa-twitter-square {
+    background: white;
+    color: #5da9dd;
+    padding-right: 10px;
+}
+
+#srjBlog .srjContactUs .fa-instagram {
+    background: white;
+    color: #d74da3;
+    padding-right: 10px;
+}
+
+#srjBlog .srjContactUs .fa-linkedin {
+    background: white;
+    color: #0077b5;
+}
+
+#srjBlog .srjRecentBlog {
+    min-height: 100vh;
+}
+
+.srjRecentBlog .srjRecentBlogHeading a {
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 5vh;
+    color: #999;
+    text-decoration: none;
+}
+
+#srjBlog .srjRecentBlog .col-md-4 .img-fluid {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#srjBlog .srjRecentBlog .col-md-8 a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* blog end */
+
+
+/* single-blog page start */
+
+#srjBlogBanner .img-fluid {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#srjSingleBlogContent .srjBlogHeading {
+    font-family: 'Roboto';
+}
+
+#srjSingleBlogContent .far,
+#srjSingleBlogContent span {
+    color: #999;
+}
+
+
+/* single-blog page end */
